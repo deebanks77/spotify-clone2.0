@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = `${window.location.origin}/`;
+const redirectUri = `${window.location.href}`;
 // const redirectUri = "http://localhost:3000/";
 console.log(redirectUri);
 
