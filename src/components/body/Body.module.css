@@ -1,0 +1,115 @@
+.body {
+  height: calc(100vh - 85px);
+  width: 80vw;
+  color: #fff;
+  overflow-y: overlay;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px 0 30px;
+}
+
+.body__info > img {
+  width: 200px;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText {
+  flex: 1;
+}
+
+.body__infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 14px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+
+/* .body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+} */
+
+.body__play {
+  font-size: 70px !important;
+  margin: 20px 50px 20px 0;
+  transition: all 0.2s ease-in-out;
+  color: #1db954;
+}
+
+.body__play:hover {
+  transform: scale(1.08);
+}
+
+.body__songList {
+  padding: 0 30px 0 30px;
+}
+
+.playlist {
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 2fr 0.1fr;
+  margin: 1rem 0 0 0;
+  color: #dddcdc;
+  position: sticky;
+  top: 13.8vh;
+  padding: 0 30px 0 30px;
+}
+
+.playlist.background {
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid silver;
+  padding: 10px 30px 10px 30px;
+  z-index: 10;
+}
+
+.playlist.sticky {
+  position: sticky;
+  top: 13.8vh;
+}
+
+.playlist_title {
+  /* width: 500px; */
+  min-width: 500px;
+}
+.playlist_album {
+  /* width: 200px; */
+  /* left: 50%; */
+}
+.playlist_time {
+  /* margin-left: 200px; */
+  /* left: 80%; */
+}
+
+.horizontalLine {
+  color: gray;
+  width: 95%;
+  margin: 5px auto;
+}
+
+/* media query */
+@media only screen and (max-width: 950px) {
+  .playlist {
+    grid-template-columns: 0.3fr 3fr 0.1fr;
+    gap: 40px;
+  }
+
+  .playlist_album {
+    display: none;
+  }
+}
